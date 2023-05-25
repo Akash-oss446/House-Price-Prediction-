@@ -15,6 +15,14 @@ with open("columns.json", "r") as f:
 @app.route('/',methods=['GET'])
 def Home():
     return render_template('index.html')
+
+@app.route('/login',methods=['GET'])
+def login():
+    return render_template('index.html')
+
+@app.route('/signup',methods=['GET'])
+def signup():
+    return render_template('index.html')    
 @app.route("/predict", methods=['POST'])
 def predict():
 
