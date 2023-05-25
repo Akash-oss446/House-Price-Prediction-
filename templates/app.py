@@ -20,9 +20,7 @@ def Home():
 def login():
     return render_template('index.html')
 
-@app.route('/signup',methods=['GET'])
-def signup():
-    return render_template('index.html')    
+# code is inorrect   
 @app.route("/predict", methods=['POST'])
 def predict():
 
